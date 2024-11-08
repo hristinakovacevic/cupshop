@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Maitree:wght@200;300;400;500;600;700&display=swap");
+:root {
+  --white: rgb(233, 229, 229);
+  --brown: #3b1405;
+  --brown-opacity: #3b1405c4;
+  --peach: #dbbb8fe0;
+  --card-background: #74402a;
+  --peach-hover: #b39161e0;
+  --mainTransition: all 0.3s linear;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: "Maitree", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: calc(10px + 2vmin);
+}
+
+.main__container {
+  background-image: url("./assets/homepage.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  z-index: 0;
+}

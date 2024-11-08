@@ -1,0 +1,28 @@
+.homepage__container {
+  background-image: url("../../assets/Ellipse.png");
+
+  background-size: cover;
+  color: var(--brown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  height: 73%;
+  transition: all 1s ease;
+}
+.homepage__container h1 {
+  font-size: 10vw;
+  font-weight: 400;
+}
+.slogan-img {
+  width: 40vw;
+}
+@media only screen and(max-width: 800px) {
+  .homepage__container {
+    background-position-x: center;
+  }
+}

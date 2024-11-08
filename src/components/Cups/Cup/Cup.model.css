@@ -1,0 +1,37 @@
+.cup-card {
+  background-color: var(--card-background);
+
+  color: var(--white);
+  text-align: center;
+  transition: all 1s ease;
+}
+.cup-card:hover img {
+  cursor: pointer;
+  width: 60%;
+  transition: all 1s ease;
+}
+.cup-card :hover {
+  cursor: pointer;
+}
+.cup-card img {
+  width: 50%;
+  height: 20vh;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+.cup-card__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.cup-card__title p {
+  font-weight: 300;
+  text-align: center;
+}
+.cup-card__title p::first-letter {
+  text-transform: capitalize;
+}
+.cup-link {
+  text-decoration: none;
+}

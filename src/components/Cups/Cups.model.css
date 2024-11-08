@@ -1,0 +1,19 @@
+.cups__background {
+  background-image: url("../../assets/Ellipse-wide.png");
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  color: var(--brown);
+}
+.cups__background h1 {
+  text-align: center;
+  top: 1em;
+  position: relative;
+}
+.cups__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  top: 5em;
+  position: relative;
+  gap: 2em;
+}
