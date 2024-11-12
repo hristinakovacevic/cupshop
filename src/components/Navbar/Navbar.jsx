@@ -14,11 +14,11 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar__container">
-        <Link className="navbar__tab" to="/home">
+        <Link className="navbar__tab" to="/">
           <img src={logo} className="logo" alt="cup logo" />
         </Link>
         <ul className="navbar__tabs">
-          <Link className="navbar__tab" to="/home">
+          <Link className="navbar__tab" to="/">
             <li>Home</li>
           </Link>
           <Link className="navbar__tab" to="/about-us">
@@ -31,19 +31,18 @@ const Navbar = () => {
         <Link to="/cart">
           <img src={cart} className="logo cart" alt="cart logo" />
         </Link>
-        <Link>
-          <img
-            src={hamburger}
-            className="logo hamburger"
-            alt="hamburger menu"
-            onClick={openMenu}
-          />
-        </Link>
+
+        <img
+          src={hamburger}
+          className="logo hamburger"
+          alt="hamburger menu"
+          onClick={openMenu}
+        />
       </div>
       {isOpen && (
         <div className="hamburger-menu__container">
           <ul className="navbar__tabs__mobile">
-            <Link className="navbar__tab" to="/home" onClick={openMenu}>
+            <Link className="navbar__tab" to="/" onClick={openMenu}>
               <li>Home</li>
             </Link>
             <Link className="navbar__tab" to="/about-us" onClick={openMenu}>

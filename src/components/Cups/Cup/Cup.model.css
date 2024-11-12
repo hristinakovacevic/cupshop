@@ -18,6 +18,7 @@
   height: 20vh;
   object-fit: cover;
   transition: all 1s ease;
+  box-shadow: -5px 4px 4px 2px #0000007a;
 }
 .cup-card__title {
   display: flex;

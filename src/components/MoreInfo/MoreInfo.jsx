@@ -30,33 +30,45 @@ const MoreInfo = () => {
         <div className="more-info__details__container">
           <img src={cup.image} alt="cup image" />
           <div className="more-info__details">
-            <p>Material</p>
-            <p>{cup.material}</p>
-            <p>Size</p>
-            <p>{cup.size}</p>
-            <p>Manufacturer</p>
-            <p>{cup.manufacturer}</p>
-            <div className="add-to-cart__actions">
-              <p>Amount:</p>
-              <button className="incr-decr-btn" onClick={decrement}>
-                -
-              </button>
-              <input
-                type="number"
-                value={quantityData}
-                onChange={(e) => setQuantityData(e.target.value)}
-                min="0"
-                max="100"
-              />
-              <button className="incr-decr-btn" onClick={increment}>
-                +
-              </button>
-              <p>Price:{cup.price} $</p>
+            <div className="material_amount_container">
+              {/* -------------------odavde */}
+              <div>
+                <p>Material</p>
+                <p>{cup.material}</p>
+                <p>Size</p>
+                <p>{cup.size}</p>
+                <p>Manufacturer</p>
+                <p>{cup.manufacturer}</p>
+              </div>
+              <div className="amount__actions">
+                <div>
+                  <p>Amount</p>
+                  <div className="amount_input">
+                    <button className="incr-decr-btn" onClick={decrement}>
+                      -
+                    </button>
+                    <input
+                      type="number"
+                      value={quantityData}
+                      onChange={(e) => setQuantityData(e.target.value)}
+                      min="0"
+                      max="100"
+                    />
+                    <button className="incr-decr-btn" onClick={increment}>
+                      +
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <button className="add-btn" onClick={() => addToCart(cup)}>
-              Add to cart
-            </button>
+            {/* ------------------------dovde */}
+            <div className="add-to-cart__price">
+              {" "}
+              <p>Price {cup.price} $</p>
+              <button className="add-btn" onClick={() => addToCart(cup)}>
+                Add to cart
+              </button>
+            </div>
           </div>
         </div>
       </div>

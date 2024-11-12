@@ -20,7 +20,7 @@ function App() {
         <CartContextProvider>
           <Suspense fallback={<Loading />}>
             <Routes>
-              <Route path="/home" element={<Homepage />} />
+              <Route path="/" element={<Homepage />} />
               <Route path="/about-us" element={<AboutUs />} />
 
               <Route path="/cups" element={<Cups />} />
