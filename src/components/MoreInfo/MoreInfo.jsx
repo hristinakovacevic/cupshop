@@ -41,7 +41,7 @@ const MoreInfo = () => {
                 <p>{cup.manufacturer}</p>
               </div>
               <div className="amount__actions">
-                <div>
+                <div className="amount__wrap">
                   <p>Amount</p>
                   <div className="amount_input">
                     <button className="incr-decr-btn" onClick={decrement}>

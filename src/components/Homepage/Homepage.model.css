@@ -16,6 +16,7 @@
 }
 .homepage__container h1 {
   font-weight: 400;
+  font-size: calc(6em + 12px);
 }
 .slogan-img {
   width: 40vw;
@@ -23,5 +24,8 @@
 @media only screen and(max-width: 800px) {
   .homepage__container {
     background-position-x: center;
+  }
+  .homepage__container h1 {
+    font-size: 5em;
   }
 }

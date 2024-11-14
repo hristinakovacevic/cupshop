@@ -47,6 +47,7 @@
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px);
+    top: 0;
     z-index: 1;
     transition: all 1s ease;
   }
